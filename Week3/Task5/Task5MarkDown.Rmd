@@ -2,13 +2,18 @@
 title: "Task5"
 author: "Samuel Burkart"
 date: "9/9/2021"
-output: html_document
+output: 'hide'
 ---
 
 ```{r}
 library(tidyverse)
 library(downloader)
 library(readxl)
-
 ```
 
+```{r}
+SoloData <- read.csv("solo-artist-followers.csv")
+BillboardData <- read.csv("billboard-hits.csv")
+view(SoloData)
+view(BillboardData)
+```
