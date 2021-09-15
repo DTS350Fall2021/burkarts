@@ -33,3 +33,8 @@ plot2 <- ggplot(data = life_data) +
   scale_size_continuous(breaks = c(10000, 20000, 30000)) +
   theme_bw() 
 plot2
+
+oceania <- life_data %>%
+  filter(continent == "Oceania")
+oceania
+tail(oceania)
